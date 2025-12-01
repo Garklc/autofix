@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFix - Reparación de Vehículos a Domicilio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AutoFix - Reparación de Vehículos a Domicilio</h1>
+
+        <!-- Sección de Servicios y Precios -->
+        <section class="services-section">
+            <h2>Servicios y Precios</h2>
+            <div class="service-cards">
+                <!-- Tarjeta 1: Cambio de aceite -->
+                <div class="card">
+                    <!-- Icono: Usaremos un div con un estilo para simular el icono de cambio de aceite -->
+                    <div class="icon oil-change-icon"></div>
+                    <p class="service-name">Cambio de aceite</p>
+                    <p class="price">Precio: $500 MXN</p>
+                </div>
+
+                <!-- Tarjeta 2: Revisión de frenos -->
+                <div class="card">
+                    <!-- Icono: Usaremos un div con un estilo para simular el icono de revisión de frenos -->
+                    <div class="icon brake-check-icon"></div>
+                    <p class="service-name">Revisión de frenos</p>
+                    <p class="price">Precio: $700 MXN</p>
+                </div>
+
+                <!-- Tarjeta 3: Diagnóstico eléctrico -->
+                <div class="card">
+                    <!-- Icono: Usaremos un div con un estilo para simular el icono de diagnóstico eléctrico -->
+                    <div class="icon diagnostic-icon"></div>
+                    <p class="service-name">Diagnóstico eléctrico</p>
+                    <p class="price">Precio: $600 MXN</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Solicitud de Reparación y Pago -->
+        <section class="form-section">
+            <form action="#" method="POST">
+                <!-- Solicitud de Reparación -->
+                <h2>Solicitar Reparación</h2>
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre del Cliente</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo_reparacion">Tipo de Reparación</label>
+                    <select id="tipo_reparacion" name="tipo_reparacion" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="aceite">Cambio de aceite ($500 MXN)</option>
+                        <option value="frenos">Revisión de frenos ($700 MXN)</option>
+                        <option value="diagnostico">Diagnóstico eléctrico ($600 MXN)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                </div>
+
+                <!-- Programar Cita -->
+                <div class="form-group">
+                    <label for="cita">Agendar Cita</label>
+                    <!-- Usamos input type="datetime-local" para una mejor experiencia, aunque el wireframe sugiere un formato de texto simple -->
+                    <input type="datetime-local" id="cita" name="cita" required>
+                </div>
+
+                <!-- Información de Pago (simulado) -->
+                <h3>Información de Pago (simulado)</h3>
+
+                <div class="form-group">
+                    <label for="tarjeta">Número de tarjeta</label>
+                    <input type="text" id="tarjeta" name="tarjeta" placeholder="**** **** **** 1234" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="titular">Nombre del Titular</label>
+                    <input type="text" id="titular" name="titular" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required style="width: 100px;">
+                </div>
+
+                <button type="submit" class="submit-button">Confirmar Solicitud</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
