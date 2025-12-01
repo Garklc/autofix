@@ -50,5 +50,3 @@ Se ha inicializado un repositorio Git en el directorio del proyecto, con un *com
 
 Para visualizar la página, simplemente abra el archivo `index.html` en cualquier navegador web moderno.
 
----
-*Desarrollado por **Manus AI***
